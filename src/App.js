@@ -1,15 +1,14 @@
-
+import Mybutton from './components/Button';
+import FunctionalComponent from './components/FunctionalComponent';
 import './App.css';
-import './components/Button';
-import './components/ClassComponent';
-import './components/FunctionalComponent';
+
 
 function App() {
   return (
     <div className="App">
-        <p>
-           My First React App
-        </p>
+        <h1> My First React App</h1>
+        <FunctionalComponent name = "Alice "></FunctionalComponent>
+        <Mybutton onClick={() => alert('buttonclicked')}></Mybutton>
     </div>
   );
 }
